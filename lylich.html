@@ -61,15 +61,15 @@
             <label id="label-1">Tên Ingame:</label>
             <input placeholder="Tên trong game. . . " class="input-ia" type="text" id="input-1" value="" required="">
         </div>
-        <!--  -->
+        <!--
         <div class="form-group-1">
             <label id="label-2">CCCD:</label>
             <input placeholder="CCCD trong game. . . " class="input-ia" type="number" id="input-2" value="" required="">
-        </div>
+        </div>-->
         <!--  -->
         <div class="form-group-1">
             <label id="label-3">Tên thật:</label>
-            <input placeholder="Tên đời thực. . . " class="input-ia" type="text" id="input-3" value="" required="">
+            <input placeholder=". . . " class="input-ia" type="text" id="input-3" value="" required="">
         </div>
         <!--  -->
         <div class="form-group-1">
@@ -84,25 +84,25 @@
         <div class="form-group-1">
             <p></p>
             <div class="suggestions" id="suggestions">
-                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-5')">Thủ Đô Hà Nội</span>
-                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-5')">TP. Hồ Chí Minh</span>
-                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-5')">Đà Nẵng</span>
-                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-5')">Hải Phòng</span>
+                <!--<span class="suggestion-item" onclick="selectSuggestion(this, 'input-5')">Hà Nội</span>-->
+                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-5')">Hồ Chí Minh</span>
+                <!--  <span class="suggestion-item" onclick="selectSuggestion(this, 'input-5')">Đà Nẵng</span>-->
+                <!--  <span class="suggestion-item" onclick="selectSuggestion(this, 'input-5')">Hải Phòng</span>-->
                 <span class="suggestion-item" onclick="selectSuggestion(this, 'input-5')">Cần Thơ</span>
                 <span class="suggestion-item" onclick="selectSuggestion(this, 'input-5')">Cà Mau</span>
-                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-5')">Sóc Trăng</span>
-                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-5')">An Giang</span>
-                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-5')">Kiên Giang</span>
-                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-5')">Hà Giang</span>
+                <!--  <span class="suggestion-item" onclick="selectSuggestion(this, 'input-5')">Sóc Trăng</span>-->
+                <!--  <span class="suggestion-item" onclick="selectSuggestion(this, 'input-5')">An Giang</span>-->
+                <!--  <span class="suggestion-item" onclick="selectSuggestion(this, 'input-5')">Kiên Giang</span>-->
+                <!--  <span class="suggestion-item" onclick="selectSuggestion(this, 'input-5')">Hà Giang</span>-->
                 <span class="suggestion-item" onclick="selectSuggestion(this, 'input-5')">Đà Lạt</span>
-                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-5')">Nha Trang</span>
-                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-5')">Vũng Tàu</span>
-                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-5')">Bình Định</span>
-                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-5')">Tây Ninh</span>
-                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-5')">Bà Rịa</span>
+                <!--  <span class="suggestion-item" onclick="selectSuggestion(this, 'input-5')">Nha Trang</span>-->
+                <!--  <span class="suggestion-item" onclick="selectSuggestion(this, 'input-5')">Vũng Tàu</span>-->
+                <!--  <span class="suggestion-item" onclick="selectSuggestion(this, 'input-5')">Bình Định</span>-->
+                <!--  <span class="suggestion-item" onclick="selectSuggestion(this, 'input-5')">Tây Ninh</span>-->
+                <!--  <span class="suggestion-item" onclick="selectSuggestion(this, 'input-5')">Bà Rịa</span>-->
                 <span class="suggestion-item" onclick="selectSuggestion(this, 'input-5')">Mỹ</span>
-                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-5')">Anh</span>
-                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-5')">Pháp</span>
+                <!--  <span class="suggestion-item" onclick="selectSuggestion(this, 'input-5')">Anh</span>-->
+                <!--  <span class="suggestion-item" onclick="selectSuggestion(this, 'input-5')">Pháp</span>-->
             </div>
         </div>
         <!--  -->
@@ -111,8 +111,8 @@
             <select id="select-1">
                 <option value="Sĩ Quan Thực Tập">Sĩ Quan Thực Tập</option>
                 <option value="Cảnh Sát Viên">Cảnh Sát Viên</option>
-                <option value="Đội Phó">Đội Phó</option>
-                <option value="Đội Trưởng">Đội Trưởng</option>
+                <option value="Đội Phó">Phó Cảnh Sát Trưởng</option>
+                <option value="Đội Trưởng">Cảnh Sát Trưởng</option>
                 <option value="Trợ Lý">Trợ Lý</option>
             </select>
         </div>
@@ -145,21 +145,21 @@
         <!--  -->
         <div class="form-group-1">
             <label id="label-9">Sở thích:</label>
-            <input placeholder="Ví Dụ: Thích làm 1 cảnh sát liêm chính, nghiêm túc, . . ." class="input-ia" type="text" id="input-7" value="" required="">
+            <input placeholder=" . . ." class="input-ia" type="text" id="input-7" value="" required="">
         </div>
         <div class="form-group-1">
             <p></p>
             <div class="suggestions" id="suggestions">
-                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-7')">Thích làm 1 cảnh sát liêm chính</span>
-                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-7')">Nghiêm túc trong mọi nhiệm vụ</span>
+                <!--  <span class="suggestion-item" onclick="selectSuggestion(this, 'input-7')">Thích làm 1 cảnh sát liêm chính</span>-->
+                <!--  <span class="suggestion-item" onclick="selectSuggestion(this, 'input-7')">Nghiêm túc trong mọi nhiệm vụ</span>-->
                 <span class="suggestion-item" onclick="selectSuggestion(this, 'input-7')">Ca Hát</span>
                 <span class="suggestion-item" onclick="selectSuggestion(this, 'input-7')">Rap</span>
-                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-7')">Nhảy đầm</span>
+                <!--  <span class="suggestion-item" onclick="selectSuggestion(this, 'input-7')">Nhảy đầm</span>-->
                 <span class="suggestion-item" onclick="selectSuggestion(this, 'input-7')">Vẽ tranh</span>
-                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-7')">Hát karaoke</span>
+                <!--  <span class="suggestion-item" onclick="selectSuggestion(this, 'input-7')">Hát karaoke</span>-->
                 <span class="suggestion-item" onclick="selectSuggestion(this, 'input-7')">Lập trình</span>
-                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-7')">Xử lý án</span>
-                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-7')">Làm cảnh sát ngoại ô</span>
+                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-7')">Xử án</span>
+                <!--  <span class="suggestion-item" onclick="selectSuggestion(this, 'input-7')">Làm cảnh sát ngoại ô</span>-->
                 <span class="suggestion-item" onclick="selectSuggestion(this, 'input-7')">Bắt tội phạm khủng bố</span>
                 <span class="suggestion-item" onclick="selectSuggestion(this, 'input-7')">Bắn súng trấn áp</span>
             </div>
@@ -173,25 +173,25 @@
         <div class="form-group-1">
             <p></p>
             <div class="suggestions" id="suggestions">
-                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-8')">
+                <!--  <span class="suggestion-item" onclick="selectSuggestion(this, 'input-8')">
                     Nghiêm túc và chính trực
-                </span>
-                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-8')">
+                </span>-->
+                <!--  <span class="suggestion-item" onclick="selectSuggestion(this, 'input-8')">
                     Dũng cảm đối mặt với thử thách
-                </span>
-                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-8')">
+                </span>-->
+                <!--  <span class="suggestion-item" onclick="selectSuggestion(this, 'input-8')">
                     Chỉ công lý, không thiên vị
-                </span>
+                </span>-->
                 <span class="suggestion-item" onclick="selectSuggestion(this, 'input-8')">
                     Tận tâm phục vụ </span>
                 <span class="suggestion-item" onclick="selectSuggestion(this, 'input-8')">
-                    Tôn trọng quyền con người
+                    Tôn trọng quyền công dân
                 </span>
                 <span class="suggestion-item" onclick="selectSuggestion(this, 'input-8')">
                     Liêm chính và trung thực
                 </span>
                 <span class="suggestion-item" onclick="selectSuggestion(this, 'input-8')">
-                    Không bao giờ bỏ cuộc
+                    Liêm sắc...
                 </span>
             </div>
         </div>
