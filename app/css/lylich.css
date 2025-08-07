@@ -1,0 +1,200 @@
+.form-group-1 label {
+    font-weight: bold;
+    min-width: 160px;
+}
+
+.form-group-1 p {
+    min-width: 160px;
+}
+
+.form-group-1 {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.reset-btn {
+    background: rgb(236, 4, 4) !important;
+}
+
+.copy-btn,
+.reset-btn {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #29207b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 300ms;
+}
+
+.copy-btn:hover {
+    background-color: #176da6;
+}
+
+.box-form-1 {
+    scale: 0.9;
+    padding: 10px;
+    border: 1px solid #2d2a8a;
+    border-radius: 10px;
+    /* background: #212121; */
+    /* color: #fff; */
+    background: #fff;
+    color: #000;
+    width: 100%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.box-form-1 .input-ia {
+    width: 100%;
+}
+
+.box-form-1 h2 {
+    text-align: center;
+}
+
+.box-form-1 .input-ia,
+select {
+    color: #000;
+    /* color: white; */
+    border: 2px solid #2a2386;
+    border-radius: 10px;
+    padding: 10px 15px;
+    background: transparent;
+    max-width: 90%;
+    outline: violet;
+}
+
+.box-form-1 select option {
+    color: #000;
+}
+
+.input-date {
+    width: 150px !important;
+}
+
+/* sug */
+.suggestions {
+    margin: 5px 0 15px 0;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.suggestion-item {
+    padding: 8px 12px;
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.suggestion-item:hover {
+    background-color: #5a73bc;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .form-group-1 {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .form-group-1 label,
+    .form-group-1 p {
+        min-width: 100% !important;
+        margin-bottom: 5px;
+    }
+
+    .box-form-1 .input-ia,
+    .box-form-1 select,
+    .box-form-1 textarea {
+        width: 100% !important;
+        max-width: 100% !important;
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    .input-date {
+        width: 100% !important;
+    }
+
+    .copy-btn,
+    .reset-btn {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .suggestions {
+        /* flex-direction: column;
+        gap: 8px; */
+        display: none;
+    }
+
+    .suggestion-item {
+        width: 100%;
+        text-align: center;
+        padding: 6px 10px;
+    }
+
+    .box-form-1 {
+        padding: 15px;
+        scale: 1;
+    }
+
+    .box-form-1 h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .box-form-1 {
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    .form-group-1 {
+        margin-bottom: 8px;
+    }
+
+    .box-form-1 .input-ia,
+    .box-form-1 select,
+    .box-form-1 textarea {
+        font-size: 13px;
+        padding: 6px 10px;
+    }
+
+    .suggestion {
+        display: none;
+    }
+
+    /* .suggestion-item {
+        font-size: 13px;
+    } */
+
+    .box-form-1 h2 {
+        font-size: 1.3rem;
+    }
+
+    .copy-btn,
+    .reset-btn {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .suggestion-select {
+        display: block;
+    }
+}
+
+@media (min-width: 768px) {
+    .suggestion-select {
+        display: none;
+    }
+}

@@ -1,0 +1,224 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/logoLSPD.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="app/css/style.css">
+    <link rel="stylesheet" href="app/css/lylich.css">
+    <title>Lý Lịch Sĩ Quan</title>
+<style>
+
+</style></head>
+
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img class="img-logo-lssd" src="images/logoLSPD.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu-navbar">
+                    <li class="nav-item menu-item">
+                        <a class="nav-link menu-link active" href="lylich.html">Lý Lịch Sĩ Quan</a>
+                    </li>
+                    <li class="nav-item menu-item">
+                        <a class="nav-link menu-link" aria-current="page" href="xinnghi.html">
+                            Đơn Xin Nghỉ Phép
+                        </a>
+                    </li>
+                    <li class="nav-item menu-item">
+                        <a class="nav-link menu-link" aria-current="page" href="baolanh.html">
+                            Bảo Lãnh Tội Phạm
+                        </a>
+                    </li>
+                    <li class="nav-item menu-item">
+                        <a class="nav-link menu-link" aria-current="page" href="hotro.html">
+                            Hỗ Trợ Xử Án
+                        </a>
+                    </li>
+                    <li class="nav-item menu-item">
+                        <a class="nav-link menu-link" aria-current="page" href="truyna.html">
+                            Hỗ Trợ Truy Nã
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="onl-user-count me-5">Online: <span id="onlineUsers" class="ms-1">2</span></div>
+    </nav>
+    <div class="back-up">
+
+    </div>
+    <form class="box-form-1 container mb-5">
+        <h2>Lý Lịch Sĩ Quan</h2>
+        <hr>
+        <!--  -->
+        <div class="form-group-1">
+            <label id="label-1">Tên Ingame:</label>
+            <input placeholder="Tên trong game. . . " class="input-ia" type="text" id="input-1" value="" required="">
+        </div>
+        <!--  -->
+        <div class="form-group-1">
+            <label id="label-2">CCCD:</label>
+            <input placeholder="CCCD trong game. . . " class="input-ia" type="number" id="input-2" value="" required="">
+        </div>
+        <!--  -->
+        <div class="form-group-1">
+            <label id="label-3">Tên thật:</label>
+            <input placeholder="Tên đời thực. . . " class="input-ia" type="text" id="input-3" value="" required="">
+        </div>
+        <!--  -->
+        <div class="form-group-1">
+            <label id="label-4">Ngày Sinh:</label>
+            <input class="input-ia input-date" type="date" id="input-4" value="" required="">
+        </div>
+        <!--  -->
+        <div class="form-group-1">
+            <label id="label-5">Nơi Sống:</label>
+            <textarea placeholder="Tỉnh thành phố đang sinh sống. . ." class="input-ia" type="text" id="input-5" value="" cols="100%" required=""></textarea>
+        </div>
+        <div class="form-group-1">
+            <p></p>
+            <div class="suggestions" id="suggestions">
+                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-5')">Thủ Đô Hà Nội</span>
+                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-5')">TP. Hồ Chí Minh</span>
+                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-5')">Đà Nẵng</span>
+                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-5')">Hải Phòng</span>
+                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-5')">Cần Thơ</span>
+                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-5')">Cà Mau</span>
+                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-5')">Sóc Trăng</span>
+                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-5')">An Giang</span>
+                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-5')">Kiên Giang</span>
+                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-5')">Hà Giang</span>
+                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-5')">Đà Lạt</span>
+                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-5')">Nha Trang</span>
+                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-5')">Vũng Tàu</span>
+                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-5')">Bình Định</span>
+                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-5')">Tây Ninh</span>
+                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-5')">Bà Rịa</span>
+                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-5')">Mỹ</span>
+                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-5')">Anh</span>
+                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-5')">Pháp</span>
+            </div>
+        </div>
+        <!--  -->
+        <div class="form-group-1">
+            <label id="label-6" class="label-select">Chức vụ hiện tại:</label>
+            <select id="select-1">
+                <option value="Sĩ Quan Thực Tập">Sĩ Quan Thực Tập</option>
+                <option value="Cảnh Sát Viên">Cảnh Sát Viên</option>
+                <option value="Đội Phó">Đội Phó</option>
+                <option value="Đội Trưởng">Đội Trưởng</option>
+                <option value="Trợ Lý">Trợ Lý</option>
+            </select>
+        </div>
+        <!--  -->
+        <div class="form-group-1">
+            <label id="label-7" class="label-select">Quân hàm:</label>
+            <select id="select-1">
+                <option value="Hạ Sĩ">Hạ Sĩ</option>
+                <option value="Trung Sĩ">Trung Sĩ</option>
+                <option value="Thượng Sĩ">Thượng Sĩ</option>
+                <option value="Thiếu Úy">Thiếu Úy</option>
+                <option value="Trung Úy">Trung Úy</option>
+                <!-- <option value="Thượng Úy">Thượng Úy</option>
+                <option value="Đại Úy">Đại Úy</option>
+                <option value="Thiếu Tá">Thiếu Tá</option>
+                <option value="Trung Tá">Trung Táĩ</option>
+                <option value="Thượng Tá">Thượng Tá</option>
+                <option value="Đại Tá">Đại Tá</option>
+                <option value="Thiếu Tướng">Thiếu Tướng</option>
+                <option value="Trung Tướng">Trung Tướng</option>
+                <option value="Thượng Tướng">Thượng Tướng</option>
+                <option value="Đại Tướng">Đại Tướng</option> -->
+            </select>
+        </div>
+        <!--  -->
+        <div class="form-group-1">
+            <label id="label-8">Ngày vào đồn:</label>
+            <input class="input-ia input-date" type="date" id="input-6" value="" required="">
+        </div>
+        <!--  -->
+        <div class="form-group-1">
+            <label id="label-9">Sở thích:</label>
+            <input placeholder="Ví Dụ: Thích làm 1 cảnh sát liêm chính, nghiêm túc, . . ." class="input-ia" type="text" id="input-7" value="" required="">
+        </div>
+        <div class="form-group-1">
+            <p></p>
+            <div class="suggestions" id="suggestions">
+                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-7')">Thích làm 1 cảnh sát liêm chính</span>
+                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-7')">Nghiêm túc trong mọi nhiệm vụ</span>
+                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-7')">Ca Hát</span>
+                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-7')">Rap</span>
+                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-7')">Nhảy đầm</span>
+                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-7')">Vẽ tranh</span>
+                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-7')">Hát karaoke</span>
+                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-7')">Lập trình</span>
+                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-7')">Xử lý án</span>
+                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-7')">Làm cảnh sát ngoại ô</span>
+                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-7')">Bắt tội phạm khủng bố</span>
+                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-7')">Bắn súng trấn áp</span>
+            </div>
+        </div>
+
+        <!--  -->
+        <div class="form-group-1">
+            <label id="label-10">Châm ngôn làm việc:</label>
+            <textarea placeholder="Ví Dụ: Khiêm Tốn, Thật Thà Và Dũng Cảm. . . " class="input-ia" type="text" id="input-8" value="" cols="100%" required=""></textarea>
+        </div>
+        <div class="form-group-1">
+            <p></p>
+            <div class="suggestions" id="suggestions">
+                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-8')">
+                    Nghiêm túc và chính trực
+                </span>
+                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-8')">
+                    Dũng cảm đối mặt với thử thách
+                </span>
+                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-8')">
+                    Chỉ công lý, không thiên vị
+                </span>
+                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-8')">
+                    Tận tâm phục vụ </span>
+                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-8')">
+                    Tôn trọng quyền con người
+                </span>
+                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-8')">
+                    Liêm chính và trung thực
+                </span>
+                <span class="suggestion-item" onclick="selectSuggestion(this, 'input-8')">
+                    Không bao giờ bỏ cuộc
+                </span>
+            </div>
+        </div>
+        <hr>
+        <button class="copy-btn" onclick="copyAllToClipboard()">Sao Chép</button>
+        <button class="reset-btn" onclick="resetValue()">Nhập lại</button>
+    </form>
+
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                    <svg class="bi" width="30" height="24">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                </a>
+                <span class="mb-3 mb-md-0 text-body-secondary">© 2025 Designed and developed by <a href="https://github.com/CyrusLe1908">@CyrusLe</a></span>
+            </div>
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            </ul>
+        </footer>
+    </div>
+
+
+<script src="app/js/online.js"></script>
+<script src="app/js/lylich.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+</body></html>
